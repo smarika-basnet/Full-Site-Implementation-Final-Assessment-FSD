@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <html>
 <head>
     <title>Delete Student</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="/SRMS/assets/css/style.css">
 </head>
 <body>
     <h2>Confirm Delete</h2>

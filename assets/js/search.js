@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.querySelector("input[name='search']");
-    if (!searchInput) return; // 🔒 prevent crash on user pages
+    if (!searchInput) return; // prevent crash on user pages
 
     const resultsBox = document.createElement("div");
     resultsBox.style.border = "1px solid #ccc";
