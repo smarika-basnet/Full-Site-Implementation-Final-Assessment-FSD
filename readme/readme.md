@@ -3,6 +3,8 @@
 ## Login Credentials
 - **Admin Username:** admin  
 - **Admin Password:** admin123  
+- **Normal User Username:** smarika101
+- **User Password:** Abc456.
 
 ## Setup Instructions
 1. Clone or download the repository into your server directory (`htdocs` or `public_html`).
