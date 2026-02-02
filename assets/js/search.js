@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
     resultsBox.style.position = "absolute";
     resultsBox.style.zIndex = "1000";
     resultsBox.style.width = searchInput.offsetWidth + "px";
+    resultsBox.style.top = (searchInput.offsetHeight + 30) + "px";
+
 
     searchInput.parentNode.style.position = "relative";
     searchInput.parentNode.appendChild(resultsBox);
@@ -20,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        fetch("/SRMS/public/search_api.php?q=" + encodeURIComponent(query))
+        fetch("/~np03cs4a240123/SRMS/public/search_api.php?q=" + encodeURIComponent(query))
             .then(res => res.json())
             .then(data => {
                 resultsBox.innerHTML = "";

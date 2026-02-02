@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <html>
 <head>
     <title>Edit Student</title>
-    <link rel="stylesheet" href="/SRMS/assets/css/style.css">
+    <link rel="stylesheet" href="/~np03cs4a240123/SRMS/assets/css/style.css">
 </head>
 <body>
     <h2>Edit Student</h2>

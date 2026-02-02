@@ -2,7 +2,8 @@
 <html>
 <head>
     <title>Student Record Management System</title>
-    <link rel="stylesheet" href="/SRMS/assets/css/style.css"> 
+    <link rel="stylesheet" href="/~np03cs4a240123/SRMS/assets/css/style.css">
+    
 </head>
 <body>
     <header>

@@ -2,9 +2,9 @@
 // config/db.php
 
 $host = "localhost";      
-$dbname = "student_record_management_system";         
-$username = "root";      
-$password = "";          
+$dbname = "np03cs4a240123";   
+$username = "np03cs4a240123";
+$password = "rgV79FcYtX";          
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);

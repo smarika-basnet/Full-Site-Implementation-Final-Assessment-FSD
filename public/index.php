@@ -31,7 +31,7 @@ $students = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <html>
 <head>
     <title>Student Records</title>
-    <link rel="stylesheet" href="/SRMS/assets/css/style.css">
+    <link rel="stylesheet" href="/~np03cs4a240123/SRMS/assets/css/style.css">
 </head>
 <body>
     <h2>Welcome, <?php echo htmlspecialchars($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></h2>
@@ -91,7 +91,7 @@ $students = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <?php endif; ?>
     </table>
 
-    <script src="/SRMS/assets/js/search.js"></script>
+    <script src="/~np03cs4a240123/SRMS/assets/js/search.js?v=6"></script>
 </body>
 </html>
 

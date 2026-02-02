@@ -19,7 +19,7 @@ $student = $stmt->fetch(PDO::FETCH_ASSOC);
 <html>
 <head>
     <title>My Record</title>
-    <link rel="stylesheet" href="/SRMS/assets/css/style.css">
+    <link rel="stylesheet" href="/~np03cs4a240123/SRMS/assets/css/style.css">
 </head>
 <body>
     <h2>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?></h2>

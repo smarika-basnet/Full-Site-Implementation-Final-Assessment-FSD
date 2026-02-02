@@ -29,8 +29,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $stmt->execute(['username' => $username]);
     $existingUser = $stmt->fetch(PDO::FETCH_ASSOC);
 
+    // Check if roll_no already exists
+    $stmt = $pdo->prepare("SELECT * FROM students WHERE roll_no = :roll_no LIMIT 1");
+    $stmt->execute(['roll_no' => $roll_no]);
+    $existingRoll = $stmt->fetch(PDO::FETCH_ASSOC);
+
     if ($existingUser) {
         $error = "Username already taken. Please choose another.";
+    } elseif ($existingRoll) {
+        $error = "Roll number already exists. Please choose another.";
     } elseif (strlen($password) < 6) {
         $error = "Password must be at least 6 characters long.";
     } elseif (!preg_match('/[A-Z]/', $password)) {
@@ -75,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <html>
 <head>
     <title>Register</title>
-    <link rel="stylesheet" href="/SRMS/assets/css/style.css">
+    <link rel="stylesheet" href="/~np03cs4a240123/SRMS/assets/css/style.css">
 </head>
 <body>
     <h2>Register</h2>
